@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TicketGo – Phân phối vé & quản lý sự kiện</title>
+  <meta name="description" content="Bản demo hệ thống phân phối vé và quản lý sự kiện (đồ án phân tích thiết kế hệ thống).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="logo" href="#/"><span class="mark">🎟</span>TicketGo</a>
+      <form class="search" id="searchForm" role="search">
+        <input id="searchInput" type="search" placeholder="Bạn tìm gì hôm nay?" aria-label="Tìm kiếm sự kiện">
+        <button type="submit" aria-label="Tìm">🔍</button>
+      </form>
+      <nav class="nav-actions" id="navActions"></nav>
+    </div>
+  </header>
+  <div class="catbar">
+    <div class="container" id="catbar"></div>
+  </div>
+  <div class="rolebar hide" id="rolebar"><div class="container" id="rolebarInner"></div></div>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer>
+    <div class="container cols">
+      <div>
+        <div class="logo" style="color:#fff"><span class="mark">🎟</span>TicketGo</div>
+        <p>Bản demo minh họa đồ án “Phân tích hệ thống phân phối vé và quản lý sự kiện”. Dữ liệu là dữ liệu mẫu, lưu trên trình duyệt; thanh toán được mô phỏng.</p>
+      </div>
+      <div>
+        <h4>Dành cho khách hàng</h4>
+        <div><a href="#/search">Tìm sự kiện</a></div>
+        <div><a href="#/my/orders">Vé của tôi</a></div>
+        <div><a href="#/my/support">Hỗ trợ</a></div>
+      </div>
+      <div>
+        <h4>Dành cho đơn vị tổ chức</h4>
+        <div><a href="#/org">Quản lý sự kiện</a></div>
+        <div><a href="#/checkin">Check-in</a></div>
+        <div><a href="#/guide">Hướng dẫn demo</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="demo-tools"><button class="fab" id="demoFab" title="Công cụ demo">⚙ Công cụ demo</button></div>
+  <div id="toast" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js" defer></script>
+  <script src="assets/js/db.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
